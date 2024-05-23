@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adinda's TriCal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <h1>Welcome to TriCal</h1>
+        <section>
+            <p>Hi! Welcome to my Assignment: Triangle Calculator</p>
+        </section>
+    </header>
+
+    <!-- body section -->
+    <section>
+        <hr>
+        <div class="section-content">
+            <h1>Triangle Calculator</h1>
+        </div>
+
+        <button type="button" id="switch-section" class="switch-button">
+            <u>Switch</u>
+        </button>
+
+        <!-- luas segitiga start -->
+        <section id="luas-section">
+            <div class="section-content">
+                <h2>Hitung Luas Segitiga</h2>
+            </div>
+
+            <div class="formula-img">
+                <img src="https://mathcyber1997.com/wp-content/uploads/2022/04/buktisegitiga9-450x218.png" alt="Formula Luas Segitiga">
+            </div>
+
+            <p>Inputkan Angka:</p>
+            <form id="luas-form">
+                <div class="form-group">
+                    <label for="base">Alas (cm):</label><br>
+                    <input type="number" id="alas" name="base" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Tinggi (cm):</label><br>
+                    <input type="number" id="tinggi" name="height" required>
+                </div>
+                <button type="submit" class="full-width-button">Hitung Luas</button>
+            </form>
+        </section>
+
+        <!-- keliling segitiga start -->
+        <section id="keliling-section" style="display: none;">
+            <div class="section-content">
+                <h2>Hitung Keliling Segitiga</h2>
+            </div>
+
+            <div class="formula-img">
+                <img src="https://mathcyber1997.com/wp-content/uploads/2022/04/buktisegitiga9-450x218.png" alt="Formula Luas Segitiga">
+            </div> 
+
+            <p>Inputkan Angka:</p>
+            <form id="keliling-form">
+                <div class="form-group">
+                    <label for="sideA">Sisi A (cm):</label><br>
+                    <input type="number" id="sideA" name="sideA" required>
+                </div>
+                <div class="form-group">
+                    <label for="sideB">Sisi B (cm):</label><br>
+                    <input type="number" id="sideB" name="sideB" required>
+                </div>
+                <div class="form-group">
+                    <label for="sideC">Sisi C (cm):</label><br>
+                    <input type="number" id="sideC" name="sideC" required>
+                </div>
+                <button type="submit" class="full-width-button">Hitung Keliling</button>
+            </form>
+        </section>
+
+        <div class="result" id="result"></div>
+        <hr>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2024 Adinda's Assignment Calculator</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
